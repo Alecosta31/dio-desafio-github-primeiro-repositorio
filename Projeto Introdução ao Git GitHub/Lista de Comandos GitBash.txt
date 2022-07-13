@@ -1,0 +1,248 @@
+﻿----------------------- Page 1-----------------------
+
+                                        GIT BASH Lista de Comandos  
+
+                                                                          
+
+                                                                                   
+
+  
+
+_________________________________________________________________  
+
+  
+
+  
+
+  
+
+  
+
+Sumário  
+  
+
+1.  O que é ......................................... 2  
+
+2.  Comandos de Navegação ........................... 2  
+
+3.  Visualizar histórico de alterações .............. 2  
+
+4.  Criar e clonar servidor ......................... 3  
+
+5.  Transferência de Dados .......................... 3  
+
+6.  Repositório GITHUB .............................. 4  
+
+7.  Trabalhando em equipe ........................... 4  
+
+8.  Manipulando versões ............................. 5  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+----------------------- Page 2-----------------------
+
+   1. O que é: Uma ferramenta para controle de  
+      versão.  
+
+  
+
+   2. Comandos de Navegação  
+  
+
+ls  Lista diretórios atuais.   
+
+cd ..  Retorna para o diretório anterior.  
+
+cd “escreva o seu diretório”  muda de diretório  
+
+mkdir  Cria um diretório.   
+
+  
+
+git add “nome do arquivo” ou git add.  Adiciona  
+arquivo para ser monitorado.  
+
+  
+
+______________________________________________________  
+
+   3. Visualizar histórico de alterações  
+  
+
+git status  Indica o status dos arquivos no  
+repositório.  
+
+git log  Visualiza versões.  
+
+git log –p  Indica a linha onde ocorreu a alteração.  
+
+git –rm  Remove um arquivo da lista de arquivos  
+monitorados.  
+
+git log –oneline  Exibe commits, suas hash etc.  
+
+  
+
+git config --local user.name "Seu nome aqui"   
+Vincula as alterações ao usuário.  
+
+git config --local user.email seu@email.aqui  
+
+ .gitignore  Qualquer arquivo ora listado nesse .txt  
+será ignorado pelo git status.  
+
+git commit –m “mensagem descritiva e objetiva”  Cria  
+um commit. Isto é, uma confirmação e responsabilização  
+por uma alteração do código.  
+
+----------------------- Page 3-----------------------
+
+_____________________________________________________  
+
+   4. Criar e clonar servidor / repositório  
+  
+
+git init  Torna a pasta atual em repositório.  
+
+  
+
+git init --bare  Parâmetro indica que este repositório  
+é puro, que contém apenas as alterações dos arquivos, e  
+não uma cópia física de cada um dos arquivos.  
+
+  
+
+git remote add local “endereço de um servidor local  
+pasta, url de um servidor ou outro computador, qualquer  
+endereço para um repositório Git”.  
+
+  
+
+git remote –v  Mostra o caminho do repositório.  
+
+  
+
+git clone “endereço da pasta clonada” “nome da nova  
+pasta”   Clonar o repositório, é assim que chamamos  
+quando queremos trazer todos os dados de um repositório  
+remoto para o nosso repositório local pela primeira vez.  
+
+  
+
+______________________________________________________  
+
+   5. Transferência de Dados  
+  
+
+Enviar dados até o servidor:  
+
+git push local (nome do repositório na pasta servidor)  
+master (nome da branch)  Envia as suas alterações para  
+o servidor e para outros usuários.  
+
+  
+
+Trazer os dados de um servidor:  
+
+git pull local  Traz as alterações feitas por outros  
+usuários para o seu repositório.  
+
+  
+
+----------------------- Page 4-----------------------
+
+git remote origin local  Renomeado o repositório  
+origin para local.  
+
+_____________________________________________________  
+
+   6. Repositório GITHUB  
+  
+
+git remote add origin  
+git@github.com:CViniviusSDias/alura-git.git -->  
+Conecta a sua conta GitHub ao repositório local.  
+
+  
+
+git push origin master  Envia os dados ao GitHub. vai  
+pedir login e senha do github.  
+
+  
+
+______________________________________________________  
+
+   7. Trabalhando em equipe  
+  
+
+Visualizing Git (git-school.github.io)  Boa  
+ferramenta para visualizar o comportamento do Git.  
+
+  
+
+git branch “nome do novo branch”  Cria um novo branch  
+ou ramificação a partir da que você está atualmente.  
+
+  
+
+git check out “nome to branch”  Muda para o branch  
+indicado.  
+
+  
+
+git merge “nome da branch”  E isto fará com que o Git  
+automaticamente crie um commit com o branch atual e todo  
+o conteúdo de nossa branch indicada.   
+
+  
+
+  
+
+  
+
+  
+
+______________________________________________________  
+
+----------------------- Page 5-----------------------
+
+   8. Manipulando versões  
+  
+
+git checkout – “nome do arquivo”  Navega entre  
+commits.  
+
+  
+
+git revert  Volta a uma versão anterior.  
+
+  
+
+git revert “hash do commit”     
+
+  
+
+  
+
+git checkout “hash to commit”   Viaja até o commit  
+indicado pela hash. A hash é um código de identificação  
+do commit e pode ser obtida usando comandos de navegação  
+ (ex.: git log –oneline).  
